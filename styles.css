@@ -1,4 +1,3 @@
-
 :root {
   --primary-color: #4a90e2;
   --border-color: #ddd;
@@ -283,6 +282,61 @@ button:nth-child(2):hover {
     max-width: 300px;
     padding: 1rem;
   }
+}
+
+/* Liens utiles */
+.liens-utiles {
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+}
+
+.liens-utiles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.liens-utiles li {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.liens-utiles li:last-child {
+  border-bottom: none;
+}
+
+.liens-utiles a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 0.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
+
+.liens-utiles a::before {
+  content: "→";
+  color: var(--primary-color);
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.liens-utiles a:hover {
+  background-color: #f0f6fd;
+  color: var(--primary-color);
+  padding-left: 0.75rem;
+}
+
+.liens-utiles a:hover::before {
+  transform: translateX(3px);
 }
 
 /* Très petits écrans */
