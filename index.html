@@ -3,245 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sélectionneur de type de Peau</title>
+    <meta name="theme-color" content="#f6f4f1">
+    <title>Aide au diagnostic de peau</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Aide au diagnostic de peau</h1>
+<main class="page">
 
-    <!-- Version Desktop/Tablette -->
-    <div class="desktop-table">
-        <table>
-            <tr>
-                <th rowspan="2" class="haut bas gauche droite">ASPECT VISUEL</th>
-                <th colspan="2" class="haut bas gauche droite">ZONE MEDIANE</th>
-                <th colspan="2" class="haut bas gauche droite">ZONE LATERALE</th>
-            </tr>
-            <tr>
-                <td class="haut bas gauche">
-                    <label><input type="checkbox" class="dilatés_med"> Ostia dilatés</label>
-                    <label><input type="checkbox" class="taches_med"> Tâches pigmentaires</label>
-                    <label><input type="checkbox" class="terne_med"> Teint terne</label>
-                    <label><input type="checkbox" class="rougeurs_med"> Rougeurs</label>
-                    <label><input type="checkbox" class="naevi_med"> Naevi</label>
-                </td>
-                <td class="haut bas droite">
-                    <label><input type="checkbox" class="serrés_med"> Ostia serrés</label>
-                    <label><input type="checkbox" class="rides_med"> Rides ridules</label>
-                    <label><input type="checkbox" class="brillance_med"> Brillance</label>
-                    <label><input type="checkbox" class="squames_med"> Squames</label>
-                    <label><input type="checkbox" class="ephélides_med"> Ephélides</label>
-                </td>
-                <td class="haut bas gauche">
-                    <label><input type="checkbox" class="dilatés_lat"> Ostia dilatés</label>
-                    <label><input type="checkbox" class="taches_lat"> Tâches pigmentaires</label>
-                    <label><input type="checkbox" class="terne_lat"> Teint terne</label>
-                    <label><input type="checkbox" class="rougeurs_lat"> Rougeurs</label>
-                    <label><input type="checkbox" class="naevi_lat"> Naevi</label>
-                </td>
-                <td class="haut bas droite">
-                    <label><input type="checkbox" class="serrés_lat"> Ostia serrés</label>
-                    <label><input type="checkbox" class="rides_lat"> Rides ridules</label>
-                    <label><input type="checkbox" class="brillance_lat"> Brillance</label>
-                    <label><input type="checkbox" class="squames_lat"> Squames</label>
-                    <label><input type="checkbox" class="ephélides_lat"> Ephélides</label>
-                </td>
-            </tr>
-            <tr>
-                <th rowspan="2" class="haut bas gauche droite">ASPECT PALPATOIRE</th>
-                <th colspan="2" class="haut bas gauche droite">ZONE MEDIANE</th>
-                <th colspan="2" class="haut bas gauche droite">ZONE LATERALE</th>
-            </tr>
-            <tr>
-                <td class="haut bas gauche">
-                    <label><input type="checkbox" class="fine_med"> Peau fine</label>
-                    <label><input type="checkbox" class="lisse_med"> Peau lisse</label>
-                    <label><input type="checkbox" class="granuleuse_med"> Peau granuleuse</label>
-                </td>
-                <td class="haut bas droite">
-                    <label><input type="checkbox" class="épaisse_med"> Peau épaisse</label>
-                    <label><input type="checkbox" class="rêche_med"> Peau rêche</label>
-                    <label><input type="checkbox" class="veloutée_med"> Peau veloutée</label>
-                </td>
-                <td class="haut bas gauche">
-                    <label><input type="checkbox" class="fine_lat"> Peau fine</label>
-                    <label><input type="checkbox" class="lisse_lat"> Peau lisse</label>
-                    <label><input type="checkbox" class="granuleuse_lat"> Peau granuleuse</label>
-                </td>
-                <td class="haut bas droite">
-                    <label><input type="checkbox" class="épaisse_lat"> Peau épaisse</label>
-                    <label><input type="checkbox" class="rêche_lat"> Peau rêche</label>
-                    <label><input type="checkbox" class="veloutée_lat"> Peau veloutée</label>
-                </td>
-            </tr>
-            <tr>
-                <th class="haut bas gauche droite">TONICITE</th>
-                <td colspan="2" class="haut bas gauche">
-                    <label><input type="checkbox" class="bonne_tonicité"> Bonne tonicité</label>
-                </td>
-                <td colspan="2" class="haut bas droite">
-                    <label><input type="checkbox" class="tonicité_insuffisante"> Tonicité insuffisante</label>
-                </td>
-            </tr>
-            <tr>
-                <th class="haut bas gauche droite">AUTRES OBSERVATIONS</th>
-                <td class="haut bas gauche">
-                    <label><input type="checkbox" class="comédons"> Comédons</label>
-                </td>
-                <td class="haut bas">
-                    <label><input type="checkbox" class="couperose"> Couperose ou télangiectasie</label>
-                </td>
-                <td class="haut bas">
-                    <label><input type="checkbox" class="stries"> Stries de déshydratation</label>
-                </td>
-                <td class="haut bas droite">
-                    <label><input type="checkbox" class="atonie"> Atonie</label>
-                </td>
-            </tr>
-        </table>
-    </div>
+    <header class="page-header">
+        <h1>Aide au diagnostic de peau</h1>
+        <p>Cochez ce que vous observez sur chaque zone, puis validez.</p>
+    </header>
 
-    <!-- Version Mobile -->
-    <div class="mobile-sections">
-        <!-- Aspect Visuel -->
-        <div class="mobile-section">
-            <div class="section-header visuel">ASPECT VISUEL</div>
-            <div class="zone-container">
-                <div class="zone">
-                    <div class="zone-title">Zone Médiane</div>
-                    <div class="zone-content">
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="dilatés_med"> Ostia dilatés</label>
-                            <label><input type="checkbox" class="taches_med"> Tâches pigmentaires</label>
-                            <label><input type="checkbox" class="terne_med"> Teint terne</label>
-                            <label><input type="checkbox" class="rougeurs_med"> Rougeurs</label>
-                            <label><input type="checkbox" class="naevi_med"> Naevi</label>
-                        </div>
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="serrés_med"> Ostia serrés</label>
-                            <label><input type="checkbox" class="rides_med"> Rides ridules</label>
-                            <label><input type="checkbox" class="brillance_med"> Brillance</label>
-                            <label><input type="checkbox" class="squames_med"> Squames</label>
-                            <label><input type="checkbox" class="ephélides_med"> Ephélides</label>
-                        </div>
+    <form id="diagnostic" novalidate>
+
+        <!-- Aspect visuel -->
+        <section class="panel theme-visuel" aria-labelledby="t-visuel">
+            <h2 id="t-visuel">Aspect visuel</h2>
+            <div class="zones">
+                <div class="zone" role="group" aria-labelledby="t-visuel-med">
+                    <h3 id="t-visuel-med">Zone médiane</h3>
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="dilates_med"><span>Ostia dilatés</span></label>
+                        <label class="choice"><input type="checkbox" name="serres_med"><span>Ostia serrés</span></label>
+                        <label class="choice"><input type="checkbox" name="taches_med"><span>Taches pigmentaires</span></label>
+                        <label class="choice"><input type="checkbox" name="rides_med"><span>Rides, ridules</span></label>
+                        <label class="choice"><input type="checkbox" name="terne_med"><span>Teint terne</span></label>
+                        <label class="choice"><input type="checkbox" name="brillance_med"><span>Brillance</span></label>
+                        <label class="choice"><input type="checkbox" name="rougeurs_med"><span>Rougeurs</span></label>
+                        <label class="choice"><input type="checkbox" name="squames_med"><span>Squames</span></label>
+                        <label class="choice"><input type="checkbox" name="naevi_med"><span>Naevi</span></label>
+                        <label class="choice"><input type="checkbox" name="ephelides_med"><span>Éphélides</span></label>
                     </div>
                 </div>
-                
-                <div class="zone">
-                    <div class="zone-title">Zone Latérale</div>
-                    <div class="zone-content">
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="dilatés_lat"> Ostia dilatés</label>
-                            <label><input type="checkbox" class="taches_lat"> Tâches pigmentaires</label>
-                            <label><input type="checkbox" class="terne_lat"> Teint terne</label>
-                            <label><input type="checkbox" class="rougeurs_lat"> Rougeurs</label>
-                            <label><input type="checkbox" class="naevi_lat"> Naevi</label>
-                        </div>
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="serrés_lat"> Ostia serrés</label>
-                            <label><input type="checkbox" class="rides_lat"> Rides ridules</label>
-                            <label><input type="checkbox" class="brillance_lat"> Brillance</label>
-                            <label><input type="checkbox" class="squames_lat"> Squames</label>
-                            <label><input type="checkbox" class="ephélides_lat"> Ephélides</label>
-                        </div>
+                <div class="zone" role="group" aria-labelledby="t-visuel-lat">
+                    <h3 id="t-visuel-lat">Zone latérale</h3>
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="dilates_lat"><span>Ostia dilatés</span></label>
+                        <label class="choice"><input type="checkbox" name="serres_lat"><span>Ostia serrés</span></label>
+                        <label class="choice"><input type="checkbox" name="taches_lat"><span>Taches pigmentaires</span></label>
+                        <label class="choice"><input type="checkbox" name="rides_lat"><span>Rides, ridules</span></label>
+                        <label class="choice"><input type="checkbox" name="terne_lat"><span>Teint terne</span></label>
+                        <label class="choice"><input type="checkbox" name="brillance_lat"><span>Brillance</span></label>
+                        <label class="choice"><input type="checkbox" name="rougeurs_lat"><span>Rougeurs</span></label>
+                        <label class="choice"><input type="checkbox" name="squames_lat"><span>Squames</span></label>
+                        <label class="choice"><input type="checkbox" name="naevi_lat"><span>Naevi</span></label>
+                        <label class="choice"><input type="checkbox" name="ephelides_lat"><span>Éphélides</span></label>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Aspect Palpatoire -->
-        <div class="mobile-section">
-            <div class="section-header palpatoire">ASPECT PALPATOIRE</div>
-            <div class="zone-container">
-                <div class="zone">
-                    <div class="zone-title">Zone Médiane</div>
-                    <div class="zone-content">
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="fine_med"> Peau fine</label>
-                            <label><input type="checkbox" class="lisse_med"> Peau lisse</label>
-                            <label><input type="checkbox" class="granuleuse_med"> Peau granuleuse</label>
-                        </div>
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="épaisse_med"> Peau épaisse</label>
-                            <label><input type="checkbox" class="rêche_med"> Peau rêche</label>
-                            <label><input type="checkbox" class="veloutée_med"> Peau veloutée</label>
-                        </div>
+        <!-- Aspect palpatoire -->
+        <section class="panel theme-palpatoire" aria-labelledby="t-palpatoire">
+            <h2 id="t-palpatoire">Aspect palpatoire</h2>
+            <div class="zones">
+                <div class="zone" role="group" aria-labelledby="t-palpatoire-med">
+                    <h3 id="t-palpatoire-med">Zone médiane</h3>
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="fine_med"><span>Peau fine</span></label>
+                        <label class="choice"><input type="checkbox" name="epaisse_med"><span>Peau épaisse</span></label>
+                        <label class="choice"><input type="checkbox" name="lisse_med"><span>Peau lisse</span></label>
+                        <label class="choice"><input type="checkbox" name="reche_med"><span>Peau rêche</span></label>
+                        <label class="choice"><input type="checkbox" name="granuleuse_med"><span>Peau granuleuse</span></label>
+                        <label class="choice"><input type="checkbox" name="veloutee_med"><span>Peau veloutée</span></label>
                     </div>
                 </div>
-                
-                <div class="zone">
-                    <div class="zone-title">Zone Latérale</div>
-                    <div class="zone-content">
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="fine_lat"> Peau fine</label>
-                            <label><input type="checkbox" class="lisse_lat"> Peau lisse</label>
-                            <label><input type="checkbox" class="granuleuse_lat"> Peau granuleuse</label>
-                        </div>
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="épaisse_lat"> Peau épaisse</label>
-                            <label><input type="checkbox" class="rêche_lat"> Peau rêche</label>
-                            <label><input type="checkbox" class="veloutée_lat"> Peau veloutée</label>
-                        </div>
+                <div class="zone" role="group" aria-labelledby="t-palpatoire-lat">
+                    <h3 id="t-palpatoire-lat">Zone latérale</h3>
+                    <div class="choices">
+                        <label class="choice"><input type="checkbox" name="fine_lat"><span>Peau fine</span></label>
+                        <label class="choice"><input type="checkbox" name="epaisse_lat"><span>Peau épaisse</span></label>
+                        <label class="choice"><input type="checkbox" name="lisse_lat"><span>Peau lisse</span></label>
+                        <label class="choice"><input type="checkbox" name="reche_lat"><span>Peau rêche</span></label>
+                        <label class="choice"><input type="checkbox" name="granuleuse_lat"><span>Peau granuleuse</span></label>
+                        <label class="choice"><input type="checkbox" name="veloutee_lat"><span>Peau veloutée</span></label>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Tonicité -->
-        <div class="mobile-section single-column">
-            <div class="section-header tonicite">TONICITÉ</div>
-            <div class="zone-container">
-                <div class="zone">
-                    <div class="zone-content">
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="bonne_tonicité"> Bonne tonicité</label>
-                            <label><input type="checkbox" class="tonicité_insuffisante"> Tonicité insuffisante</label>
-                        </div>
-                    </div>
+        <div class="panel-pair">
+            <!-- Tonicité -->
+            <section class="panel theme-tonicite" aria-labelledby="t-tonicite">
+                <h2 id="t-tonicite">Tonicité</h2>
+                <div class="choices">
+                    <label class="choice"><input type="checkbox" name="bonne_tonicite"><span>Bonne tonicité</span></label>
+                    <label class="choice"><input type="checkbox" name="tonicite_insuffisante"><span>Tonicité insuffisante</span></label>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- Autres Observations -->
-        <div class="mobile-section single-column">
-            <div class="section-header autres">AUTRES OBSERVATIONS</div>
-            <div class="zone-container">
-                <div class="zone">
-                    <div class="zone-content">
-                        <div class="zone-column">
-                            <label><input type="checkbox" class="comédons"> Comédons</label>
-                            <label><input type="checkbox" class="couperose"> Couperose ou télangiectasie</label>
-                            <label><input type="checkbox" class="stries"> Stries de déshydratation</label>
-                            <label><input type="checkbox" class="atonie"> Atonie</label>
-                        </div>
-                    </div>
+            <!-- Autres observations -->
+            <section class="panel theme-autres" aria-labelledby="t-autres">
+                <h2 id="t-autres">Autres observations</h2>
+                <div class="choices">
+                    <label class="choice"><input type="checkbox" name="comedons"><span>Comédons</span></label>
+                    <label class="choice"><input type="checkbox" name="atonie"><span>Atonie</span></label>
+                    <label class="choice"><input type="checkbox" name="couperose"><span>Couperose ou télangiectasie</span></label>
+                    <label class="choice"><input type="checkbox" name="stries"><span>Stries de déshydratation</span></label>
                 </div>
-            </div>
+            </section>
         </div>
-    </div>
 
-    <div class="button-container">
-        <button onclick="validateCheckboxes()">Valider</button>
-        <button onclick="deSelectAll()">Tout déselectionner</button>
-    </div>
-    
-    <div class="result" id="Type"></div>
-    <div class="result" id="Etat"></div>
+        <div class="actions">
+            <button type="submit" class="btn btn-primary">Valider</button>
+            <button type="button" class="btn btn-secondary" id="reset-btn">Tout désélectionner</button>
+        </div>
+    </form>
 
+    <section id="results" class="results" aria-live="polite" hidden>
+        <div class="result" id="result-type-box">
+            <h2>Type de peau</h2>
+            <p id="result-type"></p>
+        </div>
+        <div class="result" id="result-etat-box">
+            <h2>État de la peau</h2>
+            <p id="result-etat"></p>
+        </div>
+    </section>
 
-    <br>
-    <hr><hr>
-
-    <h1>Liens utiles</h1>
-    <section class="liens-utiles">
+    <section class="links" aria-labelledby="t-liens">
+        <h2 id="t-liens">Liens utiles</h2>
         <ul>
             <li><a href="https://digipad.app/p/1850258/d9d66939c8e438" target="_blank" rel="noreferrer">Dossier ressources</a></li>
-            <li><a href="https://cosphilog.fr/oscar3d/" target="_blank" rel="noreferrer">Oscar 3D - Modèle complet du corps humains</a></li>
+            <li><a href="https://cosphilog.fr/oscar3d/" target="_blank" rel="noreferrer">Oscar 3D, modèle complet du corps humain</a></li>
             <li><a href="https://tube-enseignement-professionnel.apps.education.fr/c/tutosprevert/videos" target="_blank" rel="noreferrer">Les tutos de Prévert</a></li>
         </ul>
     </section>
 
-    <script src="script.js"></script>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
